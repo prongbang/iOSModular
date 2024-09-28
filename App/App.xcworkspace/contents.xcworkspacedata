@@ -7,35 +7,14 @@
    <Group
       location = "container:"
       name = "Commons">
-      <FileRef
-         location = "group:../Commons/NetworkX/NetworkX.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Commons/FirebaseX/FirebaseX.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Commons/CryptoX/CryptoX.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Commons/DataStore/DataStore.xcodeproj">
-      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Components">
-      <FileRef
-         location = "group:../Components/Component/Component.xcodeproj">
-      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Features">
-      <FileRef
-         location = "group:../Features/Home/Home.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Features/Pin/Pin.xcodeproj">
-      </FileRef>
    </Group>
    <Group
       location = "container:"
