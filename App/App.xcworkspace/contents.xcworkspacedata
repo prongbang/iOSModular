@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:App.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Commons">
+      <FileRef
+         location = "group:../Commons/NetworkX/NetworkX.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/FirebaseX/FirebaseX.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/CryptoX/CryptoX.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/DataStore/DataStore.xcodeproj">
+      </FileRef>
+   </Group>
    <Group
       location = "container:"
       name = "Components">
       <FileRef
          location = "group:../Components/Component/Component.xcodeproj">
-      </FileRef>
-   </Group>
-   <Group
-      location = "container:"
-      name = "Navigation">
-      <FileRef
-         location = "group:../Navigation/Coordinator/Coordinator.xcodeproj">
-      </FileRef>
-   </Group>
-   <Group
-      location = "container:"
-      name = "Foundation">
-      <FileRef
-         location = "group:../Foundation/Localization/Localization.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Foundation/Core/Core.xcodeproj">
       </FileRef>
    </Group>
    <Group
@@ -37,20 +39,21 @@
    </Group>
    <Group
       location = "container:"
-      name = "Commons">
+      name = "Foundation">
       <FileRef
-         location = "group:../Commons/FirebaseX/FirebaseX.xcodeproj">
+         location = "group:../Foundation/Localization/Localization.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../Commons/CryptoX/CryptoX.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Commons/DataStore/DataStore.xcodeproj">
+         location = "group:../Foundation/Core/Core.xcodeproj">
       </FileRef>
    </Group>
-   <FileRef
-      location = "group:App.xcodeproj">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "Navigation">
+      <FileRef
+         location = "group:../Navigation/Coordinator/Coordinator.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
