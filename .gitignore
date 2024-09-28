@@ -7,6 +7,7 @@
 ### Xcode template
 ## User settings
 xcuserdata/
+**/Pods
 
 ## Xcode 8 and earlier
 *.xcscmblueprint
