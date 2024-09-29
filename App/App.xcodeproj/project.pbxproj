@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,11 @@
 		D53957392CA7E32800854FC8 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53957382CA7E32800854FC8 /* AppTests.swift */; };
 		D53957432CA7E32800854FC8 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53957422CA7E32800854FC8 /* AppUITests.swift */; };
 		D53957452CA7E32800854FC8 /* AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53957442CA7E32800854FC8 /* AppUITestsLaunchTests.swift */; };
+		D53958DB2CA8341500854FC8 /* IMCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = D53958DA2CA8341500854FC8 /* IMCoordinator */; };
+		D55FC2DE2CA9AF8C002A4D0A /* IMHome in Frameworks */ = {isa = PBXBuildFile; productRef = D55FC2DD2CA9AF8C002A4D0A /* IMHome */; };
+		D5E2D0882CA9B27B00AA6DE7 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = D5E2D0872CA9B27B00AA6DE7 /* Factory */; };
+		D5E2D08B2CA9B64D00AA6DE7 /* IMCore in Frameworks */ = {isa = PBXBuildFile; productRef = D5E2D08A2CA9B64D00AA6DE7 /* IMCore */; };
+		D5E2D08E2CA9B87B00AA6DE7 /* IMHome in Frameworks */ = {isa = PBXBuildFile; productRef = D5E2D08D2CA9B87B00AA6DE7 /* IMHome */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E2D08B2CA9B64D00AA6DE7 /* IMCore in Frameworks */,
+				D5E2D08E2CA9B87B00AA6DE7 /* IMHome in Frameworks */,
+				D55FC2DE2CA9AF8C002A4D0A /* IMHome in Frameworks */,
 				C7F455A3747FC7BE5C7CF652 /* Pods_App.framework in Frameworks */,
+				D53958DB2CA8341500854FC8 /* IMCoordinator in Frameworks */,
+				D5E2D0882CA9B27B00AA6DE7 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +111,6 @@
 				8E3A3A21B5A747B1C2840724 /* Pods-AppTests.debug.xcconfig */,
 				08F5575F5270624580473D40 /* Pods-AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,9 +120,9 @@
 				D53957202CA7E32700854FC8 /* App */,
 				D53957372CA7E32800854FC8 /* AppTests */,
 				D53957412CA7E32800854FC8 /* AppUITests */,
-				D539571F2CA7E32700854FC8 /* Products */,
-				797E7BADC358DB442CB96ED9 /* Pods */,
 				F8D6F9DC2F3C3BAFD2B2BEAA /* Frameworks */,
+				797E7BADC358DB442CB96ED9 /* Pods */,
+				D539571F2CA7E32700854FC8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +194,13 @@
 			dependencies = (
 			);
 			name = App;
+			packageProductDependencies = (
+				D53958DA2CA8341500854FC8 /* IMCoordinator */,
+				D55FC2DD2CA9AF8C002A4D0A /* IMHome */,
+				D5E2D0872CA9B27B00AA6DE7 /* Factory */,
+				D5E2D08A2CA9B64D00AA6DE7 /* IMCore */,
+				D5E2D08D2CA9B87B00AA6DE7 /* IMHome */,
+			);
 			productName = App;
 			productReference = D539571E2CA7E32700854FC8 /* App.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +275,11 @@
 				Base,
 			);
 			mainGroup = D53957152CA7E32700854FC8;
+			packageReferences = (
+				D5E2D0862CA9B27B00AA6DE7 /* XCRemoteSwiftPackageReference "Factory" */,
+				D5E2D0892CA9B64D00AA6DE7 /* XCLocalSwiftPackageReference "../Foundation/IMCore" */,
+				D5E2D08C2CA9B87B00AA6DE7 /* XCLocalSwiftPackageReference "../Features/IMHome" */,
+			);
 			productRefGroup = D539571F2CA7E32700854FC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -726,6 +747,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D5E2D0892CA9B64D00AA6DE7 /* XCLocalSwiftPackageReference "../Foundation/IMCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Foundation/IMCore;
+		};
+		D5E2D08C2CA9B87B00AA6DE7 /* XCLocalSwiftPackageReference "../Features/IMHome" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Features/IMHome;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5E2D0862CA9B27B00AA6DE7 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D53958DA2CA8341500854FC8 /* IMCoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IMCoordinator;
+		};
+		D55FC2DD2CA9AF8C002A4D0A /* IMHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IMHome;
+		};
+		D5E2D0872CA9B27B00AA6DE7 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5E2D0862CA9B27B00AA6DE7 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		D5E2D08A2CA9B64D00AA6DE7 /* IMCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IMCore;
+		};
+		D5E2D08D2CA9B87B00AA6DE7 /* IMHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IMHome;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D53957162CA7E32700854FC8 /* Project object */;
 }

@@ -6,7 +6,7 @@
 
 ### Xcode template
 ## User settings
-xcuserdata/
+**/xcuserdata/
 **/Pods
 
 ## Xcode 8 and earlier

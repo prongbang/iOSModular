@@ -7,30 +7,48 @@
    <Group
       location = "container:"
       name = "Commons">
+      <FileRef
+         location = "group:../Commons/IMCrypto">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/IMDataStore">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/IMNetwork">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Components">
+      <FileRef
+         location = "group:../Components/IMComponent">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Features">
+      <FileRef
+         location = "group:../Features/IMHome">
+      </FileRef>
+      <FileRef
+         location = "group:../Features/IMPin">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Foundation">
       <FileRef
-         location = "group:../Foundation/Localization/Localization.xcodeproj">
+         location = "group:../Foundation/IMLocalization">
       </FileRef>
       <FileRef
-         location = "group:../Foundation/Core/Core.xcodeproj">
+         location = "group:../Foundation/IMCore">
       </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Navigation">
       <FileRef
-         location = "group:../Navigation/Coordinator/Coordinator.xcodeproj">
+         location = "group:../Navigation/IMCoordinator">
       </FileRef>
    </Group>
    <FileRef

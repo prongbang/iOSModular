@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import Factory
+import IMCore
+
 
 class ViewController: UIViewController {
 
+    @Injected(\.logger) var logger: Loggers
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        logger.log("Hello Factory")
     }
-
 
 }
 
