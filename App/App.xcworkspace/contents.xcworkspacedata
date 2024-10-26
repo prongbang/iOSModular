@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Factory">
+      <FileRef
+         location = "group:../Factory/MDFactory/MDFactory.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:../Features/MDSetting/MDSetting.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Features/MDProfile/MDProfile.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Features/MDHome/MDHome.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Commons">
+      <FileRef
+         location = "group:../Commons/MDNetwork/MDNetwork.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/MDDataStore/MDDataStore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Commons/MDCrypto/MDCrypto.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Foundations">
+      <FileRef
+         location = "group:../Foundations/MDCore/MDCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../Foundations/MDComponent/MDComponent.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (5.10.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - PromiseKit (6.18.0):
+    - PromiseKit/CorePromise (= 6.18.0)
+    - PromiseKit/Foundation (= 6.18.0)
+    - PromiseKit/UIKit (= 6.18.0)
+  - PromiseKit/CorePromise (6.18.0)
+  - PromiseKit/Foundation (6.18.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.18.0):
+    - PromiseKit/CorePromise
+  - SecureStorageSwift (1.0.4)
+  - Sodium (0.8.0)
+  - Swinject (2.9.1)
+
+DEPENDENCIES:
+  - Moya (= 15.0.0)
+  - PromiseKit (= 6.18.0)
+  - SecureStorageSwift (= 1.0.4)
+  - Sodium (= 0.8.0)
+  - Swinject (= 2.9.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - PromiseKit
+    - SecureStorageSwift
+    - Sodium
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  PromiseKit: 879fa89b55fcb8f11ade9aad0c9721850bb71b9f
+  SecureStorageSwift: d07e9b968fc724b356a2ad9d0eda9bcfae5a16f4
+  Sodium: 63c0ca312a932e6da481689537d4b35568841bdc
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+
+PODFILE CHECKSUM: e594b3eb671f1e7b43a2e9f688209c63166e7acf
+
+COCOAPODS: 1.15.2

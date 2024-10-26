@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EA1BBF521A8F14C0712A7CF /* Pods_MDDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1355E0B528060A16EE708BE /* Pods_MDDataStore.framework */; };
+		34B6D2D32CCCD63F008AE4BF /* MDDataStore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 34B6D2D22CCCD63F008AE4BF /* MDDataStore.docc */; };
+		34B6D2D92CCCD63F008AE4BF /* MDDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B6D2CE2CCCD63F008AE4BF /* MDDataStore.framework */; };
+		34B6D2DE2CCCD63F008AE4BF /* MDDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6D2DD2CCCD63F008AE4BF /* MDDataStoreTests.swift */; };
+		34B6D2DF2CCCD63F008AE4BF /* MDDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B6D2D12CCCD63F008AE4BF /* MDDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34B6D2F52CCCD7BA008AE4BF /* DataStoreMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6D2F42CCCD7BA008AE4BF /* DataStoreMemory.swift */; };
+		34B6D2F72CCCD7E1008AE4BF /* DataStoreKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6D2F62CCCD7E1008AE4BF /* DataStoreKeychain.swift */; };
+		34B6D2F92CCCD7F9008AE4BF /* DataStoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6D2F82CCCD7F9008AE4BF /* DataStoreAssembly.swift */; };
+		34B6D50D2CCD297A008AE4BF /* MDFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B6D50C2CCD297A008AE4BF /* MDFactory.framework */; };
+		34B6D50E2CCD297A008AE4BF /* MDFactory.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34B6D50C2CCD297A008AE4BF /* MDFactory.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4C9A60FB10FC57F9AAD1A1C /* Pods_MDDataStore_MDDataStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D5E8E88166F7139C8126C3 /* Pods_MDDataStore_MDDataStoreTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34B6D2DA2CCCD63F008AE4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B6D2C52CCCD63F008AE4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34B6D2CD2CCCD63F008AE4BF;
+			remoteInfo = MDDataStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34B6D50F2CCD297A008AE4BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34B6D50E2CCD297A008AE4BF /* MDFactory.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03240B48C1158054BABF28A9 /* Pods-MDDataStore-MDDataStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDDataStore-MDDataStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-MDDataStore-MDDataStoreTests/Pods-MDDataStore-MDDataStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34B6D2CE2CCCD63F008AE4BF /* MDDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6D2D12CCCD63F008AE4BF /* MDDataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDDataStore.h; sourceTree = "<group>"; };
+		34B6D2D22CCCD63F008AE4BF /* MDDataStore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MDDataStore.docc; sourceTree = "<group>"; };
+		34B6D2D82CCCD63F008AE4BF /* MDDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6D2DD2CCCD63F008AE4BF /* MDDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDDataStoreTests.swift; sourceTree = "<group>"; };
+		34B6D2E82CCCD67A008AE4BF /* MDCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MDCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6D2F42CCCD7BA008AE4BF /* DataStoreMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreMemory.swift; sourceTree = "<group>"; };
+		34B6D2F62CCCD7E1008AE4BF /* DataStoreKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreKeychain.swift; sourceTree = "<group>"; };
+		34B6D2F82CCCD7F9008AE4BF /* DataStoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreAssembly.swift; sourceTree = "<group>"; };
+		34B6D50C2CCD297A008AE4BF /* MDFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MDFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D5E8E88166F7139C8126C3 /* Pods_MDDataStore_MDDataStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDDataStore_MDDataStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		807C5B980FC6D8AAB3D717FA /* Pods-MDDataStore-MDDataStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDDataStore-MDDataStoreTests.release.xcconfig"; path = "Target Support Files/Pods-MDDataStore-MDDataStoreTests/Pods-MDDataStore-MDDataStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		9682EF836CC9C6306AE6849A /* Pods-MDDataStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDDataStore.release.xcconfig"; path = "Target Support Files/Pods-MDDataStore/Pods-MDDataStore.release.xcconfig"; sourceTree = "<group>"; };
+		C1355E0B528060A16EE708BE /* Pods_MDDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1ED28DF69A391CA3CEEAED8 /* Pods-MDDataStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDDataStore.debug.xcconfig"; path = "Target Support Files/Pods-MDDataStore/Pods-MDDataStore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34B6D2CB2CCCD63F008AE4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6D50D2CCD297A008AE4BF /* MDFactory.framework in Frameworks */,
+				2EA1BBF521A8F14C0712A7CF /* Pods_MDDataStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B6D2D52CCCD63F008AE4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6D2D92CCCD63F008AE4BF /* MDDataStore.framework in Frameworks */,
+				F4C9A60FB10FC57F9AAD1A1C /* Pods_MDDataStore_MDDataStoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34B6D2C42CCCD63F008AE4BF = {
+			isa = PBXGroup;
+			children = (
+				34B6D2D02CCCD63F008AE4BF /* MDDataStore */,
+				34B6D2DC2CCCD63F008AE4BF /* MDDataStoreTests */,
+				34B6D2CF2CCCD63F008AE4BF /* Products */,
+				BEA8F95BB3043704876896E4 /* Pods */,
+				5D8F3C8B141C36B5420971D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34B6D2CF2CCCD63F008AE4BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B6D2CE2CCCD63F008AE4BF /* MDDataStore.framework */,
+				34B6D2D82CCCD63F008AE4BF /* MDDataStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34B6D2D02CCCD63F008AE4BF /* MDDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				34B6D2D12CCCD63F008AE4BF /* MDDataStore.h */,
+				34B6D2D22CCCD63F008AE4BF /* MDDataStore.docc */,
+				34B6D2F42CCCD7BA008AE4BF /* DataStoreMemory.swift */,
+				34B6D2F62CCCD7E1008AE4BF /* DataStoreKeychain.swift */,
+				34B6D2F82CCCD7F9008AE4BF /* DataStoreAssembly.swift */,
+			);
+			path = MDDataStore;
+			sourceTree = "<group>";
+		};
+		34B6D2DC2CCCD63F008AE4BF /* MDDataStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				34B6D2DD2CCCD63F008AE4BF /* MDDataStoreTests.swift */,
+			);
+			path = MDDataStoreTests;
+			sourceTree = "<group>";
+		};
+		5D8F3C8B141C36B5420971D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34B6D50C2CCD297A008AE4BF /* MDFactory.framework */,
+				34B6D2E82CCCD67A008AE4BF /* MDCommon.framework */,
+				C1355E0B528060A16EE708BE /* Pods_MDDataStore.framework */,
+				71D5E8E88166F7139C8126C3 /* Pods_MDDataStore_MDDataStoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA8F95BB3043704876896E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1ED28DF69A391CA3CEEAED8 /* Pods-MDDataStore.debug.xcconfig */,
+				9682EF836CC9C6306AE6849A /* Pods-MDDataStore.release.xcconfig */,
+				03240B48C1158054BABF28A9 /* Pods-MDDataStore-MDDataStoreTests.debug.xcconfig */,
+				807C5B980FC6D8AAB3D717FA /* Pods-MDDataStore-MDDataStoreTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34B6D2C92CCCD63F008AE4BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6D2DF2CCCD63F008AE4BF /* MDDataStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34B6D2CD2CCCD63F008AE4BF /* MDDataStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B6D2E22CCCD63F008AE4BF /* Build configuration list for PBXNativeTarget "MDDataStore" */;
+			buildPhases = (
+				259F59ACBAFC933D7B8BAA26 /* [CP] Check Pods Manifest.lock */,
+				34B6D2C92CCCD63F008AE4BF /* Headers */,
+				34B6D2CA2CCCD63F008AE4BF /* Sources */,
+				34B6D2CB2CCCD63F008AE4BF /* Frameworks */,
+				34B6D2CC2CCCD63F008AE4BF /* Resources */,
+				34B6D50F2CCD297A008AE4BF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDDataStore;
+			productName = MDDataStore;
+			productReference = 34B6D2CE2CCCD63F008AE4BF /* MDDataStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34B6D2D72CCCD63F008AE4BF /* MDDataStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B6D2E52CCCD63F008AE4BF /* Build configuration list for PBXNativeTarget "MDDataStoreTests" */;
+			buildPhases = (
+				1F36AA40F8901402DE93ED05 /* [CP] Check Pods Manifest.lock */,
+				34B6D2D42CCCD63F008AE4BF /* Sources */,
+				34B6D2D52CCCD63F008AE4BF /* Frameworks */,
+				34B6D2D62CCCD63F008AE4BF /* Resources */,
+				635C98E4D002A53687B5B327 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34B6D2DB2CCCD63F008AE4BF /* PBXTargetDependency */,
+			);
+			name = MDDataStoreTests;
+			productName = MDDataStoreTests;
+			productReference = 34B6D2D82CCCD63F008AE4BF /* MDDataStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34B6D2C52CCCD63F008AE4BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					34B6D2CD2CCCD63F008AE4BF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					34B6D2D72CCCD63F008AE4BF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 34B6D2C82CCCD63F008AE4BF /* Build configuration list for PBXProject "MDDataStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34B6D2C42CCCD63F008AE4BF;
+			productRefGroup = 34B6D2CF2CCCD63F008AE4BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34B6D2CD2CCCD63F008AE4BF /* MDDataStore */,
+				34B6D2D72CCCD63F008AE4BF /* MDDataStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34B6D2CC2CCCD63F008AE4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B6D2D62CCCD63F008AE4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F36AA40F8901402DE93ED05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDDataStore-MDDataStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		259F59ACBAFC933D7B8BAA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDDataStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635C98E4D002A53687B5B327 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDDataStore-MDDataStoreTests/Pods-MDDataStore-MDDataStoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDDataStore-MDDataStoreTests/Pods-MDDataStore-MDDataStoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDDataStore-MDDataStoreTests/Pods-MDDataStore-MDDataStoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34B6D2CA2CCCD63F008AE4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6D2F52CCCD7BA008AE4BF /* DataStoreMemory.swift in Sources */,
+				34B6D2F92CCCD7F9008AE4BF /* DataStoreAssembly.swift in Sources */,
+				34B6D2D32CCCD63F008AE4BF /* MDDataStore.docc in Sources */,
+				34B6D2F72CCCD7E1008AE4BF /* DataStoreKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B6D2D42CCCD63F008AE4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6D2DE2CCCD63F008AE4BF /* MDDataStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34B6D2DB2CCCD63F008AE4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34B6D2CD2CCCD63F008AE4BF /* MDDataStore */;
+			targetProxy = 34B6D2DA2CCCD63F008AE4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34B6D2E02CCCD63F008AE4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34B6D2E12CCCD63F008AE4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34B6D2E32CCCD63F008AE4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1ED28DF69A391CA3CEEAED8 /* Pods-MDDataStore.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.MDDataStore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34B6D2E42CCCD63F008AE4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9682EF836CC9C6306AE6849A /* Pods-MDDataStore.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.MDDataStore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34B6D2E62CCCD63F008AE4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03240B48C1158054BABF28A9 /* Pods-MDDataStore-MDDataStoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.MDDataStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34B6D2E72CCCD63F008AE4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807C5B980FC6D8AAB3D717FA /* Pods-MDDataStore-MDDataStoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.MDDataStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34B6D2C82CCCD63F008AE4BF /* Build configuration list for PBXProject "MDDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B6D2E02CCCD63F008AE4BF /* Debug */,
+				34B6D2E12CCCD63F008AE4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34B6D2E22CCCD63F008AE4BF /* Build configuration list for PBXNativeTarget "MDDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B6D2E32CCCD63F008AE4BF /* Debug */,
+				34B6D2E42CCCD63F008AE4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34B6D2E52CCCD63F008AE4BF /* Build configuration list for PBXNativeTarget "MDDataStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B6D2E62CCCD63F008AE4BF /* Debug */,
+				34B6D2E72CCCD63F008AE4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34B6D2C52CCCD63F008AE4BF /* Project object */;
+}
